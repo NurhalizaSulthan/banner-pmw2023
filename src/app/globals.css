@@ -89,10 +89,17 @@ p {
   gap: 10px;
   align-self: stretch;
 
-  border-radius: 12px;
-  background: #EFCA08;
+  border-radius: 12px ;
+  background: #ff0000;
+  border: 2px solid #ff0000;
 
 }
 .cta-button p{
   font-weight: 700;
 }
+
+
+.input-name{
+  width: 100%;
+}
+
