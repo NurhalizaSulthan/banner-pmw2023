@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: Plus Jakarta Sans;
+  }
+
+
+  body {
+    background-color: #f4f4f4;
+    width: 100vw; 
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  
+    align-items: center;
+    justify-content: center;
+    
+  
+    
+  }
