@@ -8,7 +8,9 @@
 
 }
 
-
+.navbar-link{
+    text-decoration: none;
+}
 .active {
     color: #1E1E1E;
     font-family: Plus Jakarta Sans;

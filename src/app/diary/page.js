@@ -2,10 +2,12 @@
 import "@style/diary.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 export default function Diary() {
   const [judul, setJudul] = useState([]);
   const [isiDiary, setIsiDiary] = useState([]);
+  const[isData, setData] = useState([]);
 
   const endpointAPI = "https://6555c3f284b36e3a431e4764.mockapi.io/diaryku";
 
@@ -31,13 +33,14 @@ export default function Diary() {
       {judul.length > 0 ? (
         <ul>
           {judul.map((item, idx) => (
-              <li>
+            <Link href={`/diary/${item}/${isiDiary[idx]}`} style={{ textDecoration: 'none' }}>
+              <li key={idx}>
                 <div className="diary-container">
-                    <h1>{judul[idx]}</h1>
-                    <p className="p-diary">{isiDiary[idx]}</p>
+                  <h1>{judul[idx]}</h1>
+                  <p className="p-diary">{isiDiary[idx]}</p>
                 </div>
               </li>
-
+            </Link>
           ))}
         </ul>
       ) : (

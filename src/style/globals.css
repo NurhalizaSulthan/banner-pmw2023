@@ -12,13 +12,17 @@
     background-color: #f4f4f4;
     width: 100vw; 
     height: 100vh;
+    
+
+    padding-top: 120px;
+    overflow-x: hidden;
   
     display: flex;
     flex-direction: column;
     row-gap: 32px;
   
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     
   
     
